@@ -1,5 +1,13 @@
 /* Typography */
 
+#particles {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	background-repeat: no-repeat;
+	background-position: 45% 45%;
+}
+
 html {
 	font-family: 'Roboto', sans-serif;
 }
@@ -27,9 +35,16 @@ html {
 		font-size: 20px;
 	}
 }
-
+.icons-social{
+	padding-top: 1em;
+	z-index: 30;
+}
 .icons-social i {
-	font-size: 3em;
+	font-size: 2em;
+	padding: 8px;
+}
+.icons-social i:hover {
+	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /* Custom Styles */
@@ -37,7 +52,7 @@ html {
 main {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 96vh;
 	justify-content: center;
 	padding: 0 30px;
 	text-align: center;
@@ -45,7 +60,7 @@ main {
 
 main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.75em;
+	font-size: 3em;
 	font-weight: 600;
 }
 
@@ -53,10 +68,6 @@ main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
-}
-
-.icons-social i {
-	padding: 10px;
 }
 
 .devto {
@@ -73,4 +84,66 @@ main > .tagline {
 .Roboto {
 	color: papayawhip;
 	margin: 112px 0 0;
+}
+.rotator-wrapper {
+	position: relative;
+}
+.rotator-wrapper span {
+	display: inline-block;
+	min-width: 155px;
+	text-align: left;
+}
+.rotator-wrapper span span {
+	position: absolute;
+	font-weight: bold;
+	top: -0px;
+	opacity: 0;
+	animation: rotateWord 16s linear infinite 0s;
+	color: #ffe74c;
+}
+.rotator-wrapper span span:nth-child(2) {
+	animation-delay: 3s;
+}
+.rotator-wrapper span span:nth-child(3) {
+	animation-delay: 6s;
+}
+.rotator-wrapper span span:nth-child(4) {
+	animation-delay: 9s;
+}
+.rotator-wrapper span span:nth-child(5) {
+	animation-delay: 11s;
+}
+@keyframes rotateWord {
+	0% {
+		opacity: 0;
+	}
+	2% {
+		opacity: 0;
+		transform: translateY(-30px);
+	}
+	5% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	15% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	20% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+footer {
+	background-color: whitesmoke;
+}
+.footerR {
+	float:right;
+	padding-right: 1em;
 }

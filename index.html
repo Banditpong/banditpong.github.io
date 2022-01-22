@@ -21,21 +21,51 @@
 	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102161158-1"></script>
+
+	<script src="particles.min.js"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'UA-102161158-1');
+	  window.onload  = function() {Particles.init
+		  ({
+			  selector: '.background',
+			  sizeVariations: 3,
+			  speed: 1,
+			  color: "#FFAA00",
+			  connectParticles: true
+		  });
+	  };
 	</script>
 </head>
 <body>
 	<main>
-	<div class="intro">Hello, I'm Banditpong!</div>
-	<div class="tagline">Web ¦ Embedded ¦ Tester ¦ Developer</div>
+	<div class="intro">Hello, I'm Banditpong.</div>
+		<div class="rotator-wrapper">I'm a(n)
+			<span class="rotator">
+				<span>Application Developer</span>
+				<span>Embedded Engineer</span>
+				<span>Software Developer</span>
+				<span>Test Engineer</span>
+				<span>Web Engineer</span>
+			</span>
+		</div>
+
 	<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 	<div class="icons-social">
 		<a target="_blank" href="https://github.com/banditpong"><i class="fab fa-github"></i></a>
+		<a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+		<a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+		<a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+		<a target="_blank" href="#"><i class="fab fa-gitlab"></i></a>
+		<a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>
+
 	</div>
+		<div id="particles"><canvas class="background"></canvas></div>
 	</main>
+	<footer>
+		<span>https://Banditpong.Com</span><span class="footerR">■■■■■■■■■■■□□□  LOADING COMPLETE!</span>
+	</footer>
 </body>
 </html>

@@ -98,7 +98,7 @@ main > .tagline {
 	font-weight: bold;
 	top: -0px;
 	opacity: 0;
-	animation: rotateWord 16s linear infinite 0s;
+	animation: rotateWord 14.5s linear infinite 0s;
 	color: #ffe74c;
 }
 .rotator-wrapper span span:nth-child(2) {
@@ -111,7 +111,7 @@ main > .tagline {
 	animation-delay: 9s;
 }
 .rotator-wrapper span span:nth-child(5) {
-	animation-delay: 11s;
+	animation-delay: 12s;
 }
 @keyframes rotateWord {
 	0% {

@@ -10,7 +10,7 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/themes/indigo-white.css">
+	<!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
 	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
@@ -22,7 +22,10 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102161158-1"></script>
 
-	<script src="particles.min.js"></script>
+	<!-- <script src="particles.min.js"></script> -->
+	<script src="script.js"></script>
+
+	<!--
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
@@ -37,35 +40,38 @@
 			  connectParticles: true
 		  });
 	  };
-	</script>
+	</script>-->
 </head>
 <body>
-	<main>
-	<div class="intro">Hello, I'm Banditpong.</div>
-		<div class="rotator-wrapper">I'm a(n)
-			<span class="rotator">
-				<span>Application Developer</span>
-				<span>Embedded Engineer</span>
-				<span>Software Developer</span>
-				<span>Test Engineer</span>
-				<span>Web Engineer</span>
-			</span>
-		</div>
+		<div id="container">
+			<div id="front"><main>
+					<div class="intro">Hello, I'm Banditpong.</div>
+					<div class="rotator-wrapper">I'm a(n)
+						<span class="rotator">
+							<span>Application Developer</span>
+							<span>Embedded Engineer</span>
+							<span>Software Developer</span>
+							<span>Test Engineer</span>
+							<span>Web Engineer</span>
+						</span>
+					</div>
 
-	<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-	<div class="icons-social">
-		<a target="_blank" href="https://blog.banditpong.com"><i class="fab fa-blogger"></i></a>
-		<a target="_blank" href="https://github.com/banditpong"><i class="fab fa-github"></i></a>
-		<!-- <a target="_blank" href="#"><i class="fab fa-youtube"></i></a> -->
-		<!-- <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a> -->
-		<!-- <a target="_blank" href="#"><i class="fab fa-twitter"></i></a> -->
-		<!-- <a target="_blank" href="#"><i class="fab fa-gitlab"></i></a> -->
-		<!-- <a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-	</div>
-		<div id="particles"><canvas class="background"></canvas></div>
-	</main>
-	<footer>
-		<span>https://Banditpong.Com</span><span class="footerR">■■■■■■■■■■■□□□  LOADING COMPLETE!</span>
-	</footer>
+					<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+					<div class="icons-social">
+						<a target="_blank" href="https://blog.banditpong.com"><i class="fab fa-blogger"></i></a>
+						<a target="_blank" href="https://github.com/banditpong"><i class="fab fa-github"></i></a>
+						<!-- <a target="_blank" href="#"><i class="fab fa-youtube"></i></a> -->
+						<!-- <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a> -->
+						<!-- <a target="_blank" href="#"><i class="fab fa-twitter"></i></a> -->
+						<!-- <a target="_blank" href="#"><i class="fab fa-gitlab"></i></a> -->
+						<!-- <a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+					</div>
+				</main>
+				<footer>
+					<span>https://Banditpong.com</span><span class="footerR"></span>
+				</footer>
+			</div>
+			<div id="back"><canvas id="canvas">Canvas not supported.</canvas></div>
+		</div>
 </body>
 </html>

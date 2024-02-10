@@ -1,5 +1,36 @@
 /* Typography */
+* {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
 
+}
+
+body {
+	position: relative;
+	background: #112538de;
+	
+}
+
+#container {
+	position: relative;
+}
+
+#front{
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+
+#back{
+	z-index: -10;
+}
+
+canvas#canvas {
+	background: #112538de;
+	display: block;
+	filter: blur(4px);
+}
 #particles {
 	position: absolute;
 	width: 90%;
@@ -141,7 +172,8 @@ main > .tagline {
 	}
 }
 footer {
-	background-color: whitesmoke;
+	background-color: #22374A;
+
 }
 .footerR {
 	float:right;
